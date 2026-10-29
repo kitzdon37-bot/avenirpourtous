@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@300;400;500;600&display=swap">
 <script>document.documentElement.classList.add('js')</script>
-<link rel="stylesheet" href="css/site.css?v=2">
+<link rel="stylesheet" href="css/site.css?v=4">
 </head>
 <body>
 
@@ -68,6 +68,7 @@
 
 <!-- HERO -->
 <section class="hero" aria-label="Présentation">
+  <div class="hero-photo" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1694286080811-e5e416f4fdb1?auto=format&fit=crop&w=1800&q=70')"></div>
   <canvas class="hero-canvas" aria-hidden="true"></canvas>
   <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
   <div class="hero-grid" aria-hidden="true"></div>
@@ -136,8 +137,32 @@
   </div>
 </section>
 
+<!-- SUR LE TERRAIN : SONDAGE -->
+<section class="section light" id="terrain">
+  <div class="container terrain">
+    <div class="terrain-copy">
+      <p class="eyebrow" data-reveal>Sur le terrain · Juin 2026</p>
+      <h2 data-split>À la rencontre <span class="grad">de Bangui</span></h2>
+      <p data-reveal>Avant d'agir, nous avons écouté. En juin 2026, notre équipe est allée à la rencontre de <strong>plus de 70 organisations</strong> de Bangui : entreprises, commerces, ONG et institutions. Objectif : comprendre leurs besoins réels en emploi, en compétences et en accompagnement.</p>
+      <p data-reveal>Ce sondage, entièrement autofinancé, a nourri chacun de nos projets : la plateforme KTZ Emploi, les programmes de formation et les actions en milieu scolaire.</p>
+      <dl class="terrain-figs" data-stagger>
+        <div data-reveal><dt><span data-count="70">0</span>+</dt><dd>organisations rencontrées</dd></div>
+        <div data-reveal><dt><span data-count="269">0</span></dt><dd>entreprises ciblées</dd></div>
+        <div data-reveal><dt><span data-count="44">0</span></dt><dd>lettres envoyées aux ONG</dd></div>
+        <div data-reveal><dt><span data-count="100">0</span>%</dt><dd>autofinancé</dd></div>
+      </dl>
+    </div>
+    <div class="mosaic" data-stagger data-reveal>
+      <figure class="ph ph-a"><img src="https://images.unsplash.com/photo-1734255026082-82fdc81991f0?auto=format&fit=crop&w=900&q=70" alt="Commerçante sur un marché, entourée de ses étals de tomates" loading="lazy"><figcaption>Rencontre avec les commerçants</figcaption></figure>
+      <figure class="ph ph-b"><img src="https://images.unsplash.com/photo-1761666519915-857c3656b856?auto=format&fit=crop&w=700&q=70" alt="Groupe de personnes assises lors d'une réunion" loading="lazy"><figcaption>Échanges avec les organisations</figcaption></figure>
+      <figure class="ph ph-c"><img src="https://images.unsplash.com/photo-1680713660046-67b7350ed679?auto=format&fit=crop&w=700&q=70" alt="Rue animée d'un marché africain" loading="lazy"><figcaption>Au cœur des quartiers</figcaption></figure>
+      <p class="ph-note">Photos d'illustration — bientôt remplacées par celles de notre sondage.</p>
+    </div>
+  </div>
+</section>
+
 <!-- PÔLES D'ACTION -->
-<section class="section" id="actions" style="padding-top:0">
+<section class="section" id="actions">
   <div class="container">
     <div class="head">
       <p class="eyebrow" data-reveal>Nos pôles d'action</p>
@@ -147,6 +172,7 @@
 
     <div class="bento" data-stagger>
       <article class="card pole pole-main" data-tilt data-reveal>
+        <figure class="pole-img"><img src="https://images.unsplash.com/photo-1666281134747-caa676fc2201?auto=format&fit=crop&w=1100&q=70" alt="Jeunes filles lisant ensemble un livre en classe" loading="lazy"></figure>
         <div class="pole-top">
           <span class="icon"><svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5L2 9z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5M22 9v6"/></svg></span>
           <span class="tag">Formation &amp; alphabétisation</span>
@@ -163,14 +189,10 @@
           <li>Entrepreneuriat</li>
           <li>Gestion financière pour PME</li>
         </ul>
-        <div class="pole-mock" aria-hidden="true">
-          <div class="mock-bar"><i></i><i></i><i></i></div>
-          <div class="mock-row r1"></div><div class="mock-row r2"></div><div class="mock-row r3"></div>
-          <div class="mock-badge">Formation gratuite</div>
-        </div>
       </article>
 
       <article class="card pole" data-tilt data-reveal>
+        <figure class="pole-img"><img src="https://images.unsplash.com/photo-1541178735493-479c1a27ed24?auto=format&fit=crop&w=700&q=70" alt="Jeune homme consultant des offres sur un ordinateur portable" loading="lazy"></figure>
         <div class="pole-top">
           <span class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></span>
           <span class="tag">Insertion</span>
@@ -180,6 +202,7 @@
       </article>
 
       <article class="card pole" data-tilt data-reveal>
+        <figure class="pole-img"><img src="https://images.unsplash.com/photo-1724058663142-e6e1a5e89f2d?auto=format&fit=crop&w=700&q=70" alt="Tas d'arachides en coque" loading="lazy"></figure>
         <div class="pole-top">
           <span class="icon"><svg viewBox="0 0 24 24"><path d="M12 3c4 4.5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6.5 6-11z"/><path d="M12 20v-6M9.5 15.5 12 14l2.5 1.5"/></svg></span>
           <span class="tag">Agro-industrie solidaire</span>
@@ -189,6 +212,7 @@
       </article>
 
       <article class="card pole" data-tilt data-reveal>
+        <figure class="pole-img"><img src="https://images.unsplash.com/photo-1632215861513-130b66fe97f4?auto=format&fit=crop&w=700&q=70" alt="Élève lisant à voix haute devant sa classe" loading="lazy"></figure>
         <div class="pole-top">
           <span class="icon"><svg viewBox="0 0 24 24"><path d="M4 21V9l8-5 8 5v12"/><path d="M9 21v-6h6v6M9 10h.01M15 10h.01"/></svg></span>
           <span class="tag">Milieu scolaire</span>
@@ -198,6 +222,7 @@
       </article>
 
       <article class="card pole" data-tilt data-reveal>
+        <figure class="pole-img"><img src="https://images.unsplash.com/photo-1521510186458-bbbda7aef46b?auto=format&fit=crop&w=700&q=70" alt="Groupe de femmes souriantes réunies dans leur quartier" loading="lazy"></figure>
         <div class="pole-top">
           <span class="icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M14.5 20c.2-2.3 1.5-4.5 4-4.5 1.9 0 3.5 1.6 3.5 4.5"/></svg></span>
           <span class="tag">Communauté</span>
@@ -220,6 +245,10 @@
 
     <div class="projects" data-stagger>
       <article class="card project" data-reveal data-tilt>
+        <div class="project-imgs">
+          <figure class="pole-img"><img src="https://images.unsplash.com/photo-1791328373831-b07519170ba5?auto=format&fit=crop&w=700&q=70" alt="Arachides en coque" loading="lazy"></figure>
+          <figure class="pole-img"><img src="https://images.unsplash.com/photo-1595278069441-2cf29f8005a4?auto=format&fit=crop&w=700&q=70" alt="Bouteilles en plastique usagées à recycler" loading="lazy"></figure>
+        </div>
         <div class="pole-top">
           <span class="icon"><svg viewBox="0 0 24 24"><path d="M12 3c4 4.5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6.5 6-11z"/></svg></span>
           <span class="tag">Projet 1</span>
@@ -236,6 +265,9 @@
       </article>
 
       <article class="card project" data-reveal data-tilt>
+        <div class="project-imgs">
+          <figure class="pole-img wide"><img src="https://images.unsplash.com/photo-1655720348590-c739c860beed?auto=format&fit=crop&w=1100&q=70" alt="Jeunes travaillant ensemble sur leurs ordinateurs portables" loading="lazy"></figure>
+        </div>
         <div class="pole-top">
           <span class="icon"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M11 18h2"/></svg></span>
           <span class="tag">Projet 2</span>
@@ -420,8 +452,40 @@
   </div>
 </section>
 
+<!-- EN IMAGES : galerie défilante -->
+<section class="section gallery" id="galerie" aria-label="En images">
+  <div class="container">
+    <div class="head">
+      <p class="eyebrow" data-reveal>En images</p>
+      <h2 data-split>L'humain <span class="grad">au cœur</span> de nos actions</h2>
+      <p class="lead" data-reveal>Apprendre, se rencontrer, entreprendre : ce qui nous anime au quotidien.</p>
+    </div>
+  </div>
+  <div class="photo-rows" aria-hidden="true">
+    <div class="photo-row">
+      <div class="photo-track">
+        <img src="https://images.unsplash.com/photo-1666281134747-caa676fc2201?auto=format&fit=crop&w=600&h=420&q=65" alt="" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1694286080811-e5e416f4fdb1?auto=format&fit=crop&w=600&h=420&q=65" alt="" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1734255026082-82fdc81991f0?auto=format&fit=crop&w=600&h=420&q=65" alt="" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1655720348590-c739c860beed?auto=format&fit=crop&w=600&h=420&q=65" alt="" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1632215861513-130b66fe97f4?auto=format&fit=crop&w=600&h=420&q=65" alt="" loading="lazy">
+      </div>
+    </div>
+    <div class="photo-row reverse">
+      <div class="photo-track">
+        <img src="https://images.unsplash.com/photo-1761666519915-857c3656b856?auto=format&fit=crop&w=600&h=420&q=65" alt="" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1666281269793-da06484657e8?auto=format&fit=crop&w=600&h=420&q=65" alt="" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1541178735493-479c1a27ed24?auto=format&fit=crop&w=600&h=420&q=65" alt="" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1680713660046-67b7350ed679?auto=format&fit=crop&w=600&h=420&q=65" alt="" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1521510186458-bbbda7aef46b?auto=format&fit=crop&w=600&h=420&q=65" alt="" loading="lazy">
+      </div>
+    </div>
+  </div>
+  <p class="container ph-note" style="margin-top:22px">Photos d'illustration (Unsplash) — elles seront remplacées par les photos de nos activités.</p>
+</section>
+
 <!-- NOUS SOUTENIR -->
-<section class="section" id="soutenir" style="background:var(--bg-2)">
+<section class="section support-bg" id="soutenir">
   <div class="container">
     <div class="head">
       <p class="eyebrow" data-reveal>Agir avec nous</p>
@@ -535,12 +599,12 @@
       <p class="footer-acts">Formation · Alphabétisation · Insertion · Emploi · Agro-industrie solidaire</p>
     </div>
     <div class="footer-bottom">
-      <p>© <span id="year">2026</span> KTZ Association — Avenir Pour Tous. Tous droits réservés.</p>
+      <p>© <span id="year">2026</span> KTZ Association — Avenir Pour Tous. Tous droits réservés. · Photos d'illustration : <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></p>
       <a href="#top" class="to-top">Haut de page ↑</a>
     </div>
   </div>
 </footer>
 
-<script src="js/site.js?v=1"></script>
+<script src="js/site.js?v=2"></script>
 </body>
 </html>

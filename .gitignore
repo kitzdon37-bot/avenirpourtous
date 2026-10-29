@@ -1,3 +1,6 @@
 # Documents personnels et fichiers sources : ne jamais publier
 *.pdf
 RIB*
+
+# Photos brutes à trier (elles seront recadrées et copiées dans images/)
+photos/

@@ -23,6 +23,11 @@
     });
   }
 
+  /* ── Galerie : on double chaque rangée pour une boucle sans coupure ── */
+  document.querySelectorAll('.photo-track').forEach(t => {
+    [...t.children].forEach(img => t.append(img.cloneNode(true)));
+  });
+
   /* ── Découpe des titres en mots ── */
   document.querySelectorAll('[data-split]').forEach(el => {
     let i = 0;
