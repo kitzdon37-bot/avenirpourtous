@@ -705,3 +705,27 @@ a.info:hover { border-color: rgba(242, 122, 15, .5); background: rgba(242, 122, 
 }
 .support-bg .container { position: relative; z-index: 1; }
 .support-bg .support-card { background: rgba(22, 22, 31, .78); backdrop-filter: blur(10px); }
+
+/* Hero : zoom lent façon cinéma */
+.hero-photo { opacity: .42; animation: kenburns 24s ease-in-out infinite alternate; }
+@keyframes kenburns { from { transform: scale(1); } to { transform: scale(1.12) translate(-1.5%, -1%); } }
+
+/* Bandeaux photo plein écran */
+.impact { position: relative; overflow: hidden; min-height: 78vh; display: flex; align-items: center; isolation: isolate; }
+.impact-img {
+  position: absolute; inset: -18% 0; z-index: -2;
+  background-size: cover; background-position: center;
+  filter: saturate(1.1) contrast(1.05);
+  transform: translate3d(0, var(--py, 0), 0) scale(1.06); will-change: transform;
+}
+.impact::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background:
+    linear-gradient(90deg, rgba(11, 11, 16, .88) 0%, rgba(11, 11, 16, .45) 55%, rgba(11, 11, 16, .15) 100%),
+    linear-gradient(180deg, var(--bg) 0%, transparent 18%, transparent 82%, var(--bg) 100%);
+}
+.impact-inner { padding-block: 120px; }
+.impact h2 { font-size: clamp(2.2rem, 6.4vw, 5.6rem); line-height: 1.02; max-width: 14ch; margin: 14px 0 22px; }
+.impact-sub { color: rgba(255, 255, 255, .88); text-shadow: 0 2px 14px rgba(0, 0, 0, .7); font-size: clamp(1rem, 1.6vw, 1.2rem); max-width: 46ch; }
+@media (max-width: 640px) { .impact { min-height: 64vh; } .impact-inner { padding-block: 90px; } }
+@media (prefers-reduced-motion: reduce) { .hero-photo { animation: none; } .impact-img { transform: none; } }
